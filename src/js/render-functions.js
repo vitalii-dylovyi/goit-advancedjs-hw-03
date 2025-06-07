@@ -4,7 +4,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 let gallery;
 
 export const addLoader = () => {
-  const loaderEl = document.createElement('div');
+  const loaderEl = document.createElement('span');
   loaderEl.classList.add('loader');
   document.querySelector('.loader-container').append(loaderEl);
 };
