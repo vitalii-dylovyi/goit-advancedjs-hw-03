@@ -4,14 +4,17 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 let gallery;
 
 export const addLoader = () => {
-  const loaderEl = document.createElement('span');
-  loaderEl.classList.add('loader');
-  document.querySelector('.loader-container').append(loaderEl);
+  // const loaderEl = document.createElement('span');
+  // loaderEl.classList.add('loader');
+  // document.querySelector('.loader-container').append(loaderEl);
+  const loader = document.querySelector('.loader');
+  loader.classList.remove('hidden');
 };
 
 export const removeLoader = () => {
   const loader = document.querySelector('.loader');
-  loader.remove();
+  loader.classList.add('hidden');
+  // loader.remove();
 };
 
 const getGalleryEl = () => document.querySelector('ul.gallery');
